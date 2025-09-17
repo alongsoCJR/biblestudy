@@ -85,7 +85,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item affix "><li class="part-title">目录</li><li class="chapter-item "><a href="bible/toc.html"><strong aria-hidden="true">1.</strong> 圣经有声频道</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="bible/bible.html"><strong aria-hidden="true">1.1.</strong> 创世纪篇</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><li class="part-title">目录</li><li class="chapter-item "><a href="bible/toc.html"><strong aria-hidden="true">1.</strong> 圣经有声频道</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="bible/bible.html"><strong aria-hidden="true">1.1.</strong> 创世纪篇</a></li><li class="chapter-item "><a href="bible/bible2.html"><strong aria-hidden="true">1.2.</strong> 出埃及至王权时代</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -166,6 +166,9 @@
 <h1 id="-导航图"><a class="header" href="#-导航图"><span class="bible-title">📖 导航图</span></a></h1>
 <ul>
 <li><a href="bible/./bible.html">圣经故事1-6【创世纪篇】</a></li>
+<li><a href="bible/./bible2.html">圣经故事7-15【出埃及至王权时代】</a></li>
+<li><a href="bible/./bible3.html">圣经故故事16-25【先知时代】</a></li>
+<li><a href="bible/./bible4.html">圣经故故事26-31【新约故事】</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="圣经故事1-6创世纪篇"><a class="header" href="#圣经故事1-6创世纪篇">圣经故事1-6【创世纪篇】</a></h2>
 <div class="scripture-box">
@@ -269,6 +272,112 @@ if (isWeixinBrowser()) {
     <div class="timeline-marker"></div>
     <div class="timeline-content">
       <h4 id="约瑟" class="timeline-title"><a class="header" href="#约瑟">约瑟</a></h4>
+      <div class="timeline-connector"></div>
+      <p class="timeline-desc">埃及的宰相人生</p>
+    </div>
+  </div>
+</div><div style="break-before: page; page-break-before: always;"></div><h2 id="圣经故事7一15出埃及至王权时代"><a class="header" href="#圣经故事7一15出埃及至王权时代">圣经故事7一15【出埃及至王权时代】</a></h2>
+<div class="scripture-box">
+  "起初神创造天地。地是空虚混沌。渊面黑暗。神的灵运行在水面上。神说，要有光，就有了光。"
+  <div class="verse-ref">—— 创1:1-3</div>
+</div>
+<div class="video-container serene-bg">
+  <!-- 微信专用播放器 -->
+  <div class="wx-video-player" data-video-id="orr4z1jcvk">
+    <div class="wx-loading-prompt">
+      <i class="fa fa-spinner fa-pulse"></i>
+      正在加载视频...
+    </div>
+    <button class="wx-play-button" onclick="loadWistiaVideo()">▶ 点击播放</button>
+  </div>
+  <!-- 原有Wistia播放器 -->
+  <div class="wistia-player-container" style="display:none;">
+    <script src="https://fast.wistia.com/playlist.js" async></script>
+    <wistia-playlist
+      channel-id="orr4z1jcvk"
+      playlist-style="advanced"
+      playlist-color="#2D5F91"
+      playlist-font="georgia"
+      player-resize="true">
+    </wistia-playlist>
+  </div>
+</div>
+<script>
+function loadWistiaVideo() {
+  // 隐藏微信播放按钮
+  document.querySelector('.wx-play-button').style.display = 'none';
+  document.querySelector('.wx-loading-prompt').style.display = 'none';
+
+  // 显示Wistia播放器
+  document.querySelector('.wistia-player-container').style.display = 'block';
+
+  // 重新加载Wistia脚本
+  var script = document.createElement('script');
+  script.src = 'https://fast.wistia.com/playlist.js';
+  document.head.appendChild(script);
+}
+
+// 检测微信浏览器
+function isWeixinBrowser() {
+  var ua = navigator.userAgent.toLowerCase();
+  return ua.indexOf('micromessenger') !== -1;
+}
+
+// 页面加载时检测
+if (isWeixinBrowser()) {
+  document.querySelector('.wistia-player-container').style.display = 'none';
+  document.querySelector('.wx-video-player').style.display = 'block';
+} else {
+  document.querySelector('.wx-video-player').style.display = 'none';
+  document.querySelector('.wistia-player-container').style.display = 'block';
+}
+</script>
+<hr />
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h4 id="亚当-1" class="timeline-title"><a class="header" href="#亚当-1">亚当</a></h4>
+      <div class="timeline-connector"></div>
+      <p class="timeline-desc">第一个有灵的活人</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h4 id="挪亚-1" class="timeline-title"><a class="header" href="#挪亚-1">挪亚</a></h4>
+      <div class="timeline-connector"></div>
+      <p class="timeline-desc">方舟的救恩</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h4 id="亚伯拉罕-1" class="timeline-title"><a class="header" href="#亚伯拉罕-1">亚伯拉罕</a></h4>
+      <div class="timeline-connector"></div>
+      <p class="timeline-desc">信心之父</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h4 id="以撒-1" class="timeline-title"><a class="header" href="#以撒-1">以撒</a></h4>
+      <div class="timeline-connector"></div>
+      <p class="timeline-desc">神赐的孩子</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h4 id="雅各-1" class="timeline-title"><a class="header" href="#雅各-1">雅各</a></h4>
+      <div class="timeline-connector"></div>
+      <p class="timeline-desc">抓住福分的以色列</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h4 id="约瑟-1" class="timeline-title"><a class="header" href="#约瑟-1">约瑟</a></h4>
       <div class="timeline-connector"></div>
       <p class="timeline-desc">埃及的宰相人生</p>
     </div>
